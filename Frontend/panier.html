@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Finger+Paint|Loved+by+the+King|Ma+Shan+Zheng|Merienda|Yellowtail&display=swap"
+        rel="stylesheet">
+    <title>Panier</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="logo_orinoco.png
+                " alt="le logo orinoco" id="imglogo">
+            <h1><a href="index.html">Orinoco</a></h1>
+        </div>
+    </header>
+    <div id="comptepanier">
+        <button class="buttonPanier" onclick="location.href='panier.html'" type="button">
+            Mon panier<span class="numberInCart"> </span></button>
+    </div>
+    <h1 id="titlePanier">Mon Panier</h1>
+    <div id="panierHtml">
+
+        <div id="displayItems">
+            <h3>Vos Articles</h3>
+            <aside id="myCarts">
+                <div id="cartItems"></div>
+                <button id="removeAll">Supprimer tous</button>
+            </aside>
+        </div>
+
+        <div id="emptyCarts">
+            <h2>Votre Panier est vide</h2>
+        </div>
+
+
+
+    </div>
+
+
+
+    <aside id="myForm">
+        <form id="formulaire" method="post" action="http://localhost:3000/api/teddies/order">
+            <div>
+                <label for="lastname">Nom</label>
+                <input type="text" id="lastname" name="lastname">
+            </div>
+            <div>
+                <label for="fistname">Prénom</label>
+                <input type="text" id="firstname" name="firstname">
+            </div>
+            <div>
+                <label for="adress">Adresse</label>
+                <textarea id="adress" name="adress">adressse complete</textarea>
+            </div>
+            <div>
+                <label for="mail">e-mail :</label>
+                <input type="email" id="mail" name="user_mail">
+            </div>
+            <div>
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+    </aside>
+
+    <script type="module" src="panier.js"></script>
+
+
+
+</body>
+
+</html>
